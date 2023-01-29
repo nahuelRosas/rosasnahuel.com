@@ -2,6 +2,7 @@ import AchievementItem from "@/component/AchievementItem";
 import Emoji from "@/component/Emoji";
 import LinkItem from "@/component/LinkItem";
 import MainHeading from "@/component/MainHeading";
+import ProjectItem from "@/component/ProjectItem";
 import { EmailIcon } from "@chakra-ui/icons";
 import {
   Box,
@@ -14,18 +15,19 @@ import {
   Grid,
   Center,
   SimpleGrid,
+  Stack,
 } from "@chakra-ui/react";
 import {
   FaAws,
   FaDocker,
   FaEnvelope,
   FaGithub,
+  FaGoogle,
   FaLinkedin,
   FaNodeJs,
   FaPython,
   FaReact,
 } from "react-icons/fa";
-import { SiFirebase } from "react-icons/si";
 
 const Home = () => {
   return (
@@ -74,7 +76,7 @@ const Home = () => {
             <AchievementItem icon={FaPython}>Python</AchievementItem>
             <AchievementItem icon={FaDocker}>Docker</AchievementItem>
             <AchievementItem icon={FaAws}>AWS</AchievementItem>
-            <AchievementItem icon={SiFirebase}>Firebase</AchievementItem>
+            <AchievementItem icon={FaGoogle}>Google Cloud</AchievementItem>
           </Grid>
         </Box>
         <Flex
@@ -101,35 +103,33 @@ const Home = () => {
               />
             </Circle>
           </Center>
-          <Box>
-            <Text
-              fontFamily="body"
-              fontSize={{ base: "2xl", md: "5xl" }}
-              lineHeight="1.2">
-              <Box
-                color="pink.600"
-                fontFamily="heading"
-                fontWeight="bold"
-                textShadow="0 0 10px rgba(0,0,0,0.5)"
-                display="inline-block">
-                I craft visually stunning,
-              </Box>
-              <Box
-                fontFamily="heading"
-                textShadow="0 0 10px rgba(0,0,0,0.5)"
-                fontWeight="light"
-                display="inline-block">
-                user-friendly websites
-              </Box>
-              <Box
-                fontFamily="heading"
-                fontWeight="bold"
-                textShadow="0 0 10px rgba(0,0,0,0.5)"
-                color="pink.600"
-                display="inline-block">
-                that leave a lasting impression.
-              </Box>
-            </Text>
+          <Box
+            fontFamily="body"
+            fontSize={{ base: "2xl", md: "5xl" }}
+            lineHeight="1.2">
+            <Box
+              color="pink.600"
+              fontFamily="heading"
+              fontWeight="bold"
+              textShadow="0 0 10px rgba(0,0,0,0.5)"
+              display="inline-block">
+              I craft visually stunning,
+            </Box>
+            <Box
+              fontFamily="heading"
+              textShadow="0 0 10px rgba(0,0,0,0.5)"
+              fontWeight="light"
+              display="inline-block">
+              user-friendly websites
+            </Box>
+            <Box
+              fontFamily="heading"
+              fontWeight="bold"
+              textShadow="0 0 10px rgba(0,0,0,0.5)"
+              color="pink.600"
+              display="inline-block">
+              that leave a lasting impression.
+            </Box>
             <Box
               maxWidth={{ base: "full", lg: "60rem" }}
               marginTop={{ base: "8", lg: "10" }}>
@@ -179,6 +179,30 @@ const Home = () => {
             </LinkItem>
           </SimpleGrid>
         </Flex>
+        <Box as="section" py="vGutter">
+          <Heading
+            size="3xl"
+            letterSpacing="tight"
+            fontFamily="heading"
+            fontWeight="bold"
+            textAlign="left"
+            textShadow="0 0 10px rgba(0,0,0,0.5)"
+            color="pink.600">
+            Featured Projects
+          </Heading>
+          <Box marginTop="vGutter">
+            <Stack spacing="20">
+              <ProjectItem
+                title="SkyQuick"
+                description={`
+                  SkyQuick is a web application for instant messaging. It is built with Next.Js, Google Clouds, Recoil, and Typescript
+                  `}
+                image="https://res.cloudinary.com/dpd5v5wnr/image/upload/v1674692055/Screenshots/Screenshot_from_2023-01-25_20-35-40_rmp1si.png"
+                link="https://sky-quick.vercel.app/"
+              />
+            </Stack>
+          </Box>
+        </Box>
       </Flex>
     </Container>
   );
