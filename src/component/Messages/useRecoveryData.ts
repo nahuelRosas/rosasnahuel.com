@@ -121,7 +121,6 @@ const useRecoveryData = () => {
         });
       });
     } catch (error) {
-      console.log(error);
       toast({
         title: "Error",
         description: "An error has occurred, try again later",

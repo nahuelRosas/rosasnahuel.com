@@ -2,7 +2,6 @@ import { Text } from "@chakra-ui/react";
 import React from "react";
 
 const TextComponent = (props: React.ComponentProps<typeof Text>) => {
-  console.log(props.children);
   return (
     <Text
       marginTop="14"

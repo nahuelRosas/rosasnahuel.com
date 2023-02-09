@@ -5,6 +5,7 @@ import MainHeading from "@/component/MainHeading";
 import ContactComponent from "@/component/Messages/ContactComponent";
 import ProjectItem from "@/component/ProjectItem";
 import Titles from "../component/TitleComponent";
+import GitHubCalendar from "react-github-calendar";
 import {
   Box,
   Center,
@@ -166,33 +167,56 @@ const Home = () => {
             </LinkItem>
           </SimpleGrid>
         </Flex>
-        <Box as="section" py="vGutter">
-          <Heading
-            size="3xl"
-            letterSpacing="tight"
-            fontFamily="heading"
-            fontWeight="bold"
-            textAlign="left"
-            textShadow="0 0 10px rgba(0,0,0,0.5)"
-            color="pink.600">
-            Featured Projects
-          </Heading>
-          <Box marginTop="vGutter">
-            <Stack spacing="20">
-              {Projects.map((project) => (
-                <ProjectItem
-                  deploy={project.deploy}
-                  description={project.description}
-                  images={project.images}
-                  key={project.title}
-                  index={project.index}
-                  repository={project.repository}
-                  title={project.title}
-                />
-              ))}
-            </Stack>
+        <Box as="section" py="3rem">
+          <Box as="section" py="3rem">
+            <Heading
+              size="3xl"
+              letterSpacing="tight"
+              fontFamily="heading"
+              fontWeight="bold"
+              textAlign="left"
+              textShadow="0 0 10px rgba(0,0,0,0.5)"
+              color="pink.600">
+              Featured Projects
+            </Heading>
+            <Box marginTop="3rem">
+              <Stack spacing="20">
+                {Projects.map((project) => (
+                  <ProjectItem
+                    deploy={project.deploy}
+                    description={project.description}
+                    images={project.images}
+                    key={project.title}
+                    index={project.index}
+                    repository={project.repository}
+                    title={project.title}
+                  />
+                ))}
+              </Stack>
+            </Box>
+          </Box>
+          <Box marginTop="2rem">
+            <Heading
+              size="3xl"
+              letterSpacing="tight"
+              fontFamily="heading"
+              fontWeight="bold"
+              textAlign="left"
+              textShadow="0 0 10px rgba(0,0,0,0.5)"
+              color="pink.600"
+              marginBottom="3rem">
+              Github Activity
+            </Heading>
+            <GitHubCalendar
+              username="nahuelRosas"
+              blockSize={25}
+              blockMargin={3}
+              color="#e56b6f"
+              fontSize={16}
+            />
           </Box>
         </Box>
+
         <ContactComponent />
       </Flex>
     </Container>
