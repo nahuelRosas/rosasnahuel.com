@@ -2,20 +2,21 @@ import AchievementItem from "@/component/AchievementItem";
 import Emoji from "@/component/Emoji";
 import LinkItem from "@/component/LinkItem";
 import MainHeading from "@/component/MainHeading";
+import ContactComponent from "@/component/Messages/ContactComponent";
 import ProjectItem from "@/component/ProjectItem";
-import { EmailIcon } from "@chakra-ui/icons";
+import Titles from "../component/TitleComponent";
 import {
   Box,
+  Center,
   Circle,
   Container,
   Flex,
-  Text,
-  Image,
-  Heading,
   Grid,
-  Center,
+  Heading,
+  Image,
   SimpleGrid,
   Stack,
+  Text,
 } from "@chakra-ui/react";
 import {
   FaAws,
@@ -28,40 +29,26 @@ import {
   FaPython,
   FaReact,
 } from "react-icons/fa";
-
+import TextComponent from "@/component/TextComponent";
+import { Projects } from "@/Settings";
 const Home = () => {
   return (
     <Container
       as="main"
       maxW="container.xl"
       paddingX={{ base: "6", md: "8" }}
-      paddingY={{ base: "8", md: "14" }}
       display="flex">
-      <Flex direction="column" paddingY="24">
-        <MainHeading>Rosas Nahuel</MainHeading>
-        <Text
-          color="pink.600"
-          display="block"
-          fontSize="5xl"
-          fontFamily="heading"
-          fontWeight="bold"
-          textShadow="0 0 10px rgba(0,0,0,0.5)"
-          lineHeight="1.2">
-          Full Stack Developer
-        </Text>
-        <Text
-          marginTop="14"
-          fontFamily="body"
-          maxWidth="40rem"
-          textAlign={"justify"}
-          fontSize={{ base: "md", md: "xl" }}>
+      <Flex direction="column" paddingY="10">
+        <Titles />
+        <TextComponent>
           I am a passionate developer <Emoji label="computer">💻</Emoji> focused
           on user experience <Emoji label="person raising hand">🙋‍♂️</Emoji> and
           code optimization. I strive to deliver high-quality work and
           constantly improve my skills<Emoji label="books">📚</Emoji>. I am
           dedicated to delivering exceptional results
           <Emoji label="first place medal">🥇</Emoji>.
-        </Text>
+        </TextComponent>
+
         <Box marginTop={{ base: "8", md: "14" }} width="full">
           <Grid
             maxW={{ base: "full", md: "60rem" }}
@@ -192,17 +179,21 @@ const Home = () => {
           </Heading>
           <Box marginTop="vGutter">
             <Stack spacing="20">
-              <ProjectItem
-                title="SkyQuick"
-                description={`
-                  SkyQuick is a web application for instant messaging. It is built with Next.Js, Google Clouds, Recoil, and Typescript
-                  `}
-                image="https://res.cloudinary.com/dpd5v5wnr/image/upload/v1674692055/Screenshots/Screenshot_from_2023-01-25_20-35-40_rmp1si.png"
-                link="https://sky-quick.vercel.app/"
-              />
+              {Projects.map((project) => (
+                <ProjectItem
+                  deploy={project.deploy}
+                  description={project.description}
+                  images={project.images}
+                  key={project.title}
+                  index={project.index}
+                  repository={project.repository}
+                  title={project.title}
+                />
+              ))}
             </Stack>
           </Box>
         </Box>
+        <ContactComponent />
       </Flex>
     </Container>
   );
