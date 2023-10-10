@@ -1,20 +1,19 @@
-import "../styles/prism.css";
-
-import { ChakraProvider } from "@chakra-ui/react";
-import { Global } from "@emotion/react";
-import fontFace from "lib/fontface";
-import theme from "lib/theme";
-import { DefaultSeo } from "next-seo";
-
 import type { AppProps } from "next/app";
+import { Provider } from "@robust-ui/nextjs-components";
+import React from "react";
+import { Nav } from "@/components/nav";
+import { Footer } from "../components/footer";
+// import { Background } from "@/components/background";
+
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <DefaultSeo />
-      <ChakraProvider theme={theme}>
-        <Global styles={fontFace} />
+      {/* <Background /> */}
+      <Provider bg="black" overflowY="auto">
+        <Nav />
         <Component {...pageProps} />
-      </ChakraProvider>
+        <Footer />
+      </Provider>
     </>
   );
 }
