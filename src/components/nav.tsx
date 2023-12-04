@@ -13,6 +13,10 @@ export default function Nav() {
   const [language, setLanguage] = useLanguage();
   return (
     <Header
+      p={{
+        base: "1.5vh",
+        md: "2.5vh",
+      }}
       colorScheme="black"
       zIndex="2"
       boxShadowRaw="0 0 1.5vh 0 rgba(255, 255, 255, 0.3)">

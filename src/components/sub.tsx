@@ -251,6 +251,10 @@ export default function Sub() {
         }}
         textAlign="center"
         px="6vw"
+        mb={{
+          base: "3vh",
+          md: "0",
+        }}
         colors={["white", "teal"]}
         fontWeights={["400", "900"]}
         multiLanguageSupport={{
