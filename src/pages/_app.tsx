@@ -1,18 +1,21 @@
-import type { AppProps } from "next/app";
 import { Provider } from "@robust-ui/nextjs-components";
-import React from "react";
-import { Nav } from "@/components/nav";
-import { Footer } from "../components/footer";
-// import { Background } from "@/components/background";
-
+import { Analytics } from "@vercel/analytics/react";
+import React, { lazy, Suspense } from "react";
+import type { AppProps } from "next/app";
+import Nav from "@/components/nav";
+import Sub from "@/components/sub";
+const Background = lazy(() => import("@/components/background"));
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      {/* <Background /> */}
-      <Provider bg="black" overflowY="auto">
+      <Analytics />
+      <Suspense>
+        <Background />
+      </Suspense>
+      <Provider bg="transparent">
         <Nav />
         <Component {...pageProps} />
-        <Footer />
+        <Sub />
       </Provider>
     </>
   );
