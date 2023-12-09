@@ -99,9 +99,14 @@ export default function EaccesError() {
           en: "Conquering the EACCES Error: | Installing Libraries on Linux Made Easy",
           es: "Venciendo el Error EACCES: | Instalación de Bibliotecas en Linux de Forma Sencilla",
         }}
-        images={[
-          "https://res.cloudinary.com/dpd5v5wnr/image/upload/v1693169562/portfolio/Articles/Overcoming%20the%20EACCES%20error%20when%20installing%20libraries%20on%20Linux/1684810747172_bguk3p.webp",
-        ]}>
+        images={{
+          src: [
+            "https://res.cloudinary.com/dpd5v5wnr/image/upload/v1693169562/portfolio/Articles/Overcoming%20the%20EACCES%20error%20when%20installing%20libraries%20on%20Linux/1684810747172_bguk3p.webp",
+          ],
+          imagesProps: {
+            isSlider: true,
+          },
+        }}>
         <StyledText
           {...commonTextStyle}
           multiLanguageSupport={{
