@@ -1,4 +1,4 @@
-import { Vector3, Color } from "three";
+import { Vector3 } from "three";
 
 export interface Instance {
   position: Vector3;
@@ -6,14 +6,4 @@ export interface Instance {
   velocity: Vector3;
   attraction: number;
   vlimit: number;
-}
-
-export interface CustomUniforms {
-  diffuse: Color;
-  thicknessColor: Color;
-  thicknessDistortion: number;
-  thicknessAmbient: number;
-  thicknessAttenuation: number;
-  thicknessPower: number;
-  thicknessScale: number;
 }

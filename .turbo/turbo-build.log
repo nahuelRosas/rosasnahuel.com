@@ -1,0 +1,42 @@
+
+> portfolio@0.1.0 build /home/nahuelrosas/Public/Github/robust-ui/apps/web
+> next build
+
+   Linting and checking validity of types ...
+   ▲ Next.js 14.0.4
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Collecting page data ...
+   Generating static pages (0/13) ...
+   Generating static pages (3/13) 
+   Generating static pages (6/13) 
+   Generating static pages (9/13) 
+ ✓ Generating static pages (13/13) 
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (pages)                              Size     First Load JS
+┌ ○ / (826 ms)                             5.8 kB          901 kB
+├   /_app                                  0 B             895 kB
+├ ○ /404                                   182 B           895 kB
+├ ○ /about-me (486 ms)                     5.86 kB         901 kB
+├ λ /api/send                              0 B             895 kB
+├ ○ /articles (899 ms)                     2.68 kB         897 kB
+├ ○ /articles/breaking-robust (973 ms)     4.99 kB         900 kB
+├ ○ /articles/eacces-error (1224 ms)       7.3 kB          902 kB
+├ ○ /cv (787 ms)                           6.44 kB         901 kB
+├ ○ /projects (553 ms)                     2.81 kB         898 kB
+├ ○ /projects/kalo (464 ms)                2.56 kB         899 kB
+├ ○ /projects/pyticketmaster (405 ms)      2.08 kB         899 kB
+├ ○ /projects/robust (506 ms)              2.48 kB         899 kB
+└ ○ /projects/skyquick (426 ms)            2.74 kB         900 kB
++ First Load JS shared by all              895 kB
+  ├ chunks/framework-18723b55e5c7db9b.js   45.2 kB
+  ├ chunks/main-6ea68c4a8a2bba22.js        31.6 kB
+  ├ chunks/pages/_app-4d1a378e19671fc1.js  816 kB
+  └ chunks/webpack-4af2b0049bb8c43e.js     1.64 kB
+
+○  (Static)   prerendered as static content
+λ  (Dynamic)  server-rendered on demand using Node.js
+

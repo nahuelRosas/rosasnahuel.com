@@ -1,4 +1,4 @@
-import { SpeedInsights } from "@vercel/speed-insights/next";
+// import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Provider } from "@robust-ui/nextjs-components";
 import { Analytics } from "@vercel/analytics/react";
 import React, { lazy, Suspense } from "react";
@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Analytics />
-      <SpeedInsights />
+      {/* <SpeedInsights /> */}
       <Suspense>
         <Background />
       </Suspense>
