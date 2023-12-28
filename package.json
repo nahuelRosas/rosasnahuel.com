@@ -11,7 +11,7 @@
   "dependencies": {
     "@next/bundle-analyzer": "^14.0.4",
     "@react-three/fiber": "^8.15.12",
-    "@robust-ui/nextjs-components": "workspace: *",
+    "@robust-ui/nextjs-components": "0.9.1",
     "@vercel/analytics": "^1.1.0",
     "@vercel/speed-insights": "^1.0.2",
     "chroma-js": "^2.4.2",
