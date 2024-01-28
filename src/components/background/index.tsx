@@ -9,8 +9,8 @@ export default function Background() {
         position: "fixed",
         top: 0,
         left: 0,
-        width: "100%",
-        height: "100%",
+        width: "100dvw",
+        height: "100dvh",
         zIndex: -1,
         background: "#010208",
       }}
