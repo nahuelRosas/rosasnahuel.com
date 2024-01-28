@@ -9,28 +9,28 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/bundle-analyzer": "^14.0.4",
-    "@react-three/fiber": "^8.15.12",
-    "@robust-ui/nextjs-components": "0.9.1",
-    "@vercel/analytics": "^1.1.0",
-    "@vercel/speed-insights": "^1.0.2",
+    "@next/bundle-analyzer": "^14.1.0",
+    "@react-three/fiber": "^8.15.15",
+    "@robust-ui/nextjs-components": "1.0.0",
+    "@vercel/analytics": "^1.1.2",
+    "@vercel/speed-insights": "^1.0.8",
     "chroma-js": "^2.4.2",
     "logrocket": "^7.0.0",
-    "next": "14.0.4",
+    "next": "14.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "resend": "^2.0.0",
-    "terser-webpack-plugin": "^5.3.9",
-    "three": "^0.159.0"
+    "resend": "^3.1.0",
+    "terser-webpack-plugin": "^5.3.10",
+    "three": "^0.160.1"
   },
   "devDependencies": {
     "@types/chroma-js": "^2.4.3",
-    "@types/node": "^20.10.5",
-    "@types/react": "^18.2.45",
+    "@types/node": "^20.11.9",
+    "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
     "@types/three": "^0.160.0",
     "eslint": "^8.56.0",
-    "eslint-config-next": "14.0.4",
+    "eslint-config-next": "14.1.0",
     "typescript": "^5.3.3"
   }
 }

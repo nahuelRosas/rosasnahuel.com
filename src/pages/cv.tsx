@@ -16,7 +16,8 @@ export default function Index() {
         gap="5dvh"
         tabIndex={-1}
         id="Curriculum Vitae"
-        flexDirection="column">
+        flexDirection="column"
+      >
         <Flex
           widthRaw={{ base: "calc(100dvw - 12dvw)", md: "calc(100dvw - 6dvw)" }}
           colorSchemeProperty={{
@@ -36,7 +37,8 @@ export default function Index() {
           }}
           pb="3dvh"
           overflow="hidden"
-          flexDirection="column">
+          flexDirection="column"
+        >
           <StyledText
             optimizedWidth
             textAlign="center"
@@ -47,7 +49,8 @@ export default function Index() {
             }}
             colors={["white", "teal", "white", "indigo"]}
             my="2dvh"
-            mx="5dvw">
+            mx="5dvw"
+          >
             Nahuel | Rosas
           </StyledText>
           <Flex flexWrap="wrap" optimizedWidth justifyContent="center">
@@ -62,7 +65,8 @@ export default function Index() {
               mx="3dvh"
               mt="2dvh"
               iconType="whatsappFill"
-              p="0">
+              p="0"
+            >
               (+54) 9 3835 433924
             </NextLink>
             <NextLink
@@ -76,7 +80,8 @@ export default function Index() {
               mx="3dvh"
               mt="2dvh"
               iconType="mailFill"
-              p="0">
+              p="0"
+            >
               rosasnahuel.dev@gmail.com
             </NextLink>
             <NextLink
@@ -90,7 +95,8 @@ export default function Index() {
               mx="3dvh"
               iconType="githubFill"
               mt="2dvh"
-              p="0">
+              p="0"
+            >
               nahuelRosas
             </NextLink>
             <NextLink
@@ -104,7 +110,8 @@ export default function Index() {
               color="white"
               mx="3dvh"
               mt="2dvh"
-              p="0">
+              p="0"
+            >
               nahuelrosas
             </NextLink>
             <NextLink
@@ -131,13 +138,13 @@ export default function Index() {
             <StyledText
               height="fitContent"
               textAlign="center"
-              elementName="CVLabel"
               fontWeights={["500"]}
               fontSizeRaw={{
                 base: "2.5dvh",
                 md: "3dvh",
               }}
-              colors={["white", "teal", "white", "indigo"]}>
+              colors={["white", "teal", "white", "indigo"]}
+            >
               Córdoba, CBA X5000 - Argentina
             </StyledText>
           </Flex>
@@ -161,7 +168,8 @@ export default function Index() {
           }}
           pb="3dvh"
           overflow="hidden"
-          flexDirection="column">
+          flexDirection="column"
+        >
           <StyledText
             optimizedWidth
             textAlign="left"
@@ -213,7 +221,8 @@ export default function Index() {
             hover={{
               animationRaw: "scaleUp 0.1s ease-in-out forwards",
             }}
-            animationRaw="scaleDown 0.1s ease-in-out forwards">
+            animationRaw="scaleDown 0.1s ease-in-out forwards"
+          >
             <Flex optimizedWidth justifyContent="spaceBetween">
               <StyledText
                 optimizedWidth
@@ -223,7 +232,8 @@ export default function Index() {
                   base: "2.5dvh",
                   md: "4dvh",
                 }}
-                colors={["white", "teal", "white", "indigo"]}>
+                colors={["white", "teal", "white", "indigo"]}
+              >
                 Oracle - Alura
               </StyledText>
               <StyledText
@@ -234,7 +244,8 @@ export default function Index() {
                   base: "2.5dvh",
                   md: "3dvh",
                 }}
-                colors={["white", "teal", "white", "indigo"]}>
+                colors={["white", "teal", "white", "indigo"]}
+              >
                 Online
               </StyledText>
             </Flex>
@@ -304,7 +315,8 @@ export default function Index() {
             hover={{
               animationRaw: "scaleUp 0.1s ease-in-out forwards",
             }}
-            animationRaw="scaleDown 0.1s ease-in-out forwards">
+            animationRaw="scaleDown 0.1s ease-in-out forwards"
+          >
             <Flex optimizedWidth justifyContent="spaceBetween">
               <StyledText
                 optimizedWidth
@@ -314,7 +326,8 @@ export default function Index() {
                   base: "2.5dvh",
                   md: "4dvh",
                 }}
-                colors={["white", "teal", "white", "indigo"]}>
+                colors={["white", "teal", "white", "indigo"]}
+              >
                 Soy Henry
               </StyledText>
               <StyledText
@@ -325,7 +338,8 @@ export default function Index() {
                   base: "2.5dvh",
                   md: "3dvh",
                 }}
-                colors={["white", "teal", "white", "indigo"]}>
+                colors={["white", "teal", "white", "indigo"]}
+              >
                 Online
               </StyledText>
             </Flex>
@@ -392,7 +406,8 @@ export default function Index() {
             hover={{
               animationRaw: "scaleUp 0.1s ease-in-out forwards",
             }}
-            animationRaw="scaleDown 0.1s ease-in-out forwards">
+            animationRaw="scaleDown 0.1s ease-in-out forwards"
+          >
             <Flex optimizedWidth justifyContent="spaceBetween">
               <StyledText
                 optimizedWidth
@@ -416,7 +431,8 @@ export default function Index() {
                   base: "2.5dvh",
                   md: "3dvh",
                 }}
-                colors={["white", "teal", "white", "indigo"]}>
+                colors={["white", "teal", "white", "indigo"]}
+              >
                 Córdoba
               </StyledText>
             </Flex>
@@ -486,7 +502,8 @@ export default function Index() {
             hover={{
               animationRaw: "scaleUp 0.1s ease-in-out forwards",
             }}
-            animationRaw="scaleDown 0.1s ease-in-out forwards">
+            animationRaw="scaleDown 0.1s ease-in-out forwards"
+          >
             <Flex optimizedWidth justifyContent="spaceBetween">
               <StyledText
                 optimizedWidth
@@ -510,7 +527,8 @@ export default function Index() {
                   base: "2.5dvh",
                   md: "3dvh",
                 }}
-                colors={["white", "teal", "white", "indigo"]}>
+                colors={["white", "teal", "white", "indigo"]}
+              >
                 Córdoba
               </StyledText>
             </Flex>
@@ -565,7 +583,8 @@ export default function Index() {
           }}
           pb="3dvh"
           overflow="hidden"
-          flexDirection="column">
+          flexDirection="column"
+        >
           <StyledText
             optimizedWidth
             textAlign="left"
@@ -618,12 +637,14 @@ export default function Index() {
             hover={{
               animationRaw: "scaleUp 0.1s ease-in-out forwards",
             }}
-            animationRaw="scaleDown 0.1s ease-in-out forwards">
+            animationRaw="scaleDown 0.1s ease-in-out forwards"
+          >
             <Flex
               width="100%"
               mb="2dvh"
               justifyContent="spaceBetween"
-              flexDirection="row">
+              flexDirection="row"
+            >
               <Flex flexDirection="column">
                 <StyledText
                   optimizedWidth
@@ -647,7 +668,8 @@ export default function Index() {
                     base: "2.5dvh",
                     md: "3dvh",
                   }}
-                  colors={["white", "teal", "white", "indigo"]}>
+                  colors={["white", "teal", "white", "indigo"]}
+                >
                   Uils
                 </StyledText>
               </Flex>
@@ -658,7 +680,8 @@ export default function Index() {
                   base: "2.5dvh",
                   md: "3dvh",
                 }}
-                colors={["white", "teal", "white", "indigo"]}>
+                colors={["white", "teal", "white", "indigo"]}
+              >
                 01/2023 - 04/2023
               </StyledText>
             </Flex>
@@ -792,12 +815,14 @@ export default function Index() {
             hover={{
               animationRaw: "scaleUp 0.1s ease-in-out forwards",
             }}
-            animationRaw="scaleDown 0.1s ease-in-out forwards">
+            animationRaw="scaleDown 0.1s ease-in-out forwards"
+          >
             <Flex
               width="100%"
               mb="2dvh"
               justifyContent="spaceBetween"
-              flexDirection="row">
+              flexDirection="row"
+            >
               <Flex flexDirection="column">
                 <StyledText
                   optimizedWidth
@@ -821,7 +846,8 @@ export default function Index() {
                     base: "2.5dvh",
                     md: "3dvh",
                   }}
-                  colors={["white", "teal", "white", "indigo"]}>
+                  colors={["white", "teal", "white", "indigo"]}
+                >
                   Soy Henry
                 </StyledText>
               </Flex>
@@ -832,7 +858,8 @@ export default function Index() {
                   base: "2.5dvh",
                   md: "3dvh",
                 }}
-                colors={["white", "teal", "white", "indigo"]}>
+                colors={["white", "teal", "white", "indigo"]}
+              >
                 09/2022 - 12/2022
               </StyledText>
             </Flex>
@@ -972,7 +999,8 @@ export default function Index() {
           }}
           pb="3dvh"
           overflow="hidden"
-          flexDirection="column">
+          flexDirection="column"
+        >
           <StyledText
             optimizedWidth
             textAlign="left"
@@ -1025,7 +1053,8 @@ export default function Index() {
             hover={{
               animationRaw: "scaleUp 0.1s ease-in-out forwards",
             }}
-            animationRaw="scaleDown 0.1s ease-in-out forwards">
+            animationRaw="scaleDown 0.1s ease-in-out forwards"
+          >
             <Flex width="100%" mb="2dvh" justifyContent="spaceBetween">
               <StyledText
                 optimizedWidth
@@ -1113,7 +1142,8 @@ export default function Index() {
             hover={{
               animationRaw: "scaleUp 0.1s ease-in-out forwards",
             }}
-            animationRaw="scaleDown 0.1s ease-in-out forwards">
+            animationRaw="scaleDown 0.1s ease-in-out forwards"
+          >
             <Flex width="100%" mb="2dvh" justifyContent="spaceBetween">
               <StyledText
                 optimizedWidth
@@ -1201,7 +1231,8 @@ export default function Index() {
             hover={{
               animationRaw: "scaleUp 0.1s ease-in-out forwards",
             }}
-            animationRaw="scaleDown 0.1s ease-in-out forwards">
+            animationRaw="scaleDown 0.1s ease-in-out forwards"
+          >
             <Flex width="100%" mb="2dvh" justifyContent="spaceBetween">
               <StyledText
                 optimizedWidth
@@ -1286,7 +1317,8 @@ export default function Index() {
             hover={{
               animationRaw: "scaleUp 0.1s ease-in-out forwards",
             }}
-            animationRaw="scaleDown 0.1s ease-in-out forwards">
+            animationRaw="scaleDown 0.1s ease-in-out forwards"
+          >
             <Flex width="100%" mb="2dvh" justifyContent="spaceBetween">
               <StyledText
                 optimizedWidth

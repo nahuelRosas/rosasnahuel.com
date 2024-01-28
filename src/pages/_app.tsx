@@ -1,5 +1,5 @@
 // import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Provider } from "@robust-ui/nextjs-components";
+import { Main } from "@robust-ui/nextjs-components";
 import { Analytics } from "@vercel/analytics/react";
 import React, { lazy, Suspense } from "react";
 import type { AppProps } from "next/app";
@@ -17,11 +17,11 @@ export default function App({ Component, pageProps }: AppProps) {
       <Suspense>
         <Background />
       </Suspense>
-      <Provider bg="transparent">
+      <Main bg="transparent">
         <Nav />
         <Component {...pageProps} />
         <Sub />
-      </Provider>
+      </Main>
     </>
   );
 }
