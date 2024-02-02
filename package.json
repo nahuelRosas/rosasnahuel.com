@@ -1,19 +1,22 @@
 {
-  "name": "web",
+  "name": "portfolio",
   "version": "0.4.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run format:write && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format:write": "prettier --write \"**/*.{ts,tsx,md,json, html, css}\" --cache",
+    "depCheck": "npm run format:write && depCheck",
+    "clean": "rimraf .next node_modules .robust-ui"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^14.1.0",
-    "@react-three/fiber": "^8.15.15",
-    "@robust-ui/nextjs-components": "1.0.0",
+    "@react-three/fiber": "^8.15.16",
+    "@robust-ui/nextjs-components": "1.3.1",
     "@vercel/analytics": "^1.1.2",
-    "@vercel/speed-insights": "^1.0.8",
+    "@vercel/speed-insights": "^1.0.9",
     "chroma-js": "^2.4.2",
     "logrocket": "^7.0.0",
     "next": "14.1.0",
@@ -21,16 +24,18 @@
     "react-dom": "^18.2.0",
     "resend": "^3.1.0",
     "terser-webpack-plugin": "^5.3.10",
-    "three": "^0.160.1"
+    "three": "^0.161.0"
   },
   "devDependencies": {
     "@types/chroma-js": "^2.4.3",
-    "@types/node": "^20.11.9",
-    "@types/react": "^18.2.48",
+    "@types/node": "^20.11.16",
+    "@types/react": "^18.2.51",
     "@types/react-dom": "^18.2.18",
-    "@types/three": "^0.160.0",
+    "@types/three": "^0.161.2",
     "eslint": "^8.56.0",
     "eslint-config-next": "14.1.0",
+    "prettier": "^3.2.4",
+    "rimraf": "^5.0.5",
     "typescript": "^5.3.3"
   }
 }
